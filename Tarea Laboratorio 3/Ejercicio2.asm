@@ -7,7 +7,7 @@
         mov     CX, 5
         mov     AX, 1
 
-condic  mul     CX
+condic:  mul     CX
         loop    condic
 
 
