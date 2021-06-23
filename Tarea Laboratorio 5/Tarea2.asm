@@ -37,21 +37,21 @@ org 100h
         ret
     movercursor2:
         mov AH, 02h
-        mov DH, 12
+        mov DH, 11
         mov DL, 20
         mov BH, 0h
         int 10h
         ret
     movercursor3:
         mov AH, 02h
-        mov DH, 14
+        mov DH, 12
         mov DL, 20
         mov BH, 0h
         int 10h
         ret
     movercursor4:
         mov AH, 02h
-        mov DH, 16
+        mov DH, 13
         mov DL, 20
         mov BH, 0h
         int 10h
@@ -85,7 +85,7 @@ org 100h
 
     section .data
 
-    ;Los nombres aparecen con 1 fila de espacio entre ellos
+    ;Los nombres no aparecen espacio de filas entre ellos
     nombre11 DB "Nelson$"
     nombre22 DB "Mauricio$"
     apellido11 DB "Villalta$"
